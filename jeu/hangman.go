@@ -3,10 +3,10 @@ package jeu
 import "strings"
 
 type Game struct {
-	status      string   // statut du jeu à cahque tour
-	lettre      []string // lettre du mot àn trouvé
+	Status      string   // statut du jeu à chaque tour
+	lettre      []string // lettre du mot à trouver
 	lettreFound []string // lettre trouvé dans le mot
-	lettreUse   []string // lettre saisi
+	lettreUse   []string // lettre saisie
 	nbrTour     int      // nombre de chance
 }
 
@@ -23,7 +23,7 @@ func New(nbrTour int, mot string) *Game {
 	}
 
 	g := &Game{
-		status:      "",
+		Status:      "",
 		lettre:      letters,
 		lettreFound: found,
 		lettreUse:   []string{},
